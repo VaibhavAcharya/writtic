@@ -1,3 +1,8 @@
+import { useRouter } from "next/router";
+import { useRef, useState } from "react";
+
+import firebase, { FirebaseFirestore } from "../lib/firebase";
+
 import {
   Avatar,
   Button,
@@ -7,9 +12,6 @@ import {
   Input,
   Stack,
 } from "@chakra-ui/react";
-import { useRouter } from "next/router";
-import { useRef, useState } from "react";
-import firebase, { FirebaseFirestore } from "../lib/firebase";
 
 export default function Landing() {
   const { push: RouterPush } = useRouter();

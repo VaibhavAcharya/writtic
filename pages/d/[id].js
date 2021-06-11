@@ -4,10 +4,16 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { FirebaseFirestore } from "./../../lib/firebase";
 
-import { Flex, Heading, Link, Stack, Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
-import { Textarea } from "@chakra-ui/textarea";
-import { useClipboard } from "@chakra-ui/hooks";
+import {
+  Flex,
+  Heading,
+  Link,
+  Stack,
+  Text,
+  Button,
+  Textarea,
+  useClipboard,
+} from "@chakra-ui/react";
 
 export default function Document() {
   const {
