@@ -10,7 +10,10 @@ export default function _App({ Component, pageProps }) {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
 
         <title>Writtic</title>
-        <meta name="description" content="Store & share your notes securely over the web." />
+        <meta
+          name="description"
+          content="Store & share your notes securely over the web."
+        />
       </Head>
 
       <ChakraProvider>
