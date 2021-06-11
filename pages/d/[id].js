@@ -68,7 +68,7 @@ export default function Document() {
   );
 
   const { hasCopied, onCopy } = useClipboard(
-    `${process.env.NEXT_PUBLIC_BASE_URL}${asPath}`
+    `${(process.env.NEXT_PUBLIC_VERCEL_URL || process.env.NEXT_PUBLIC_BASE_URL)}${asPath}`
   );
 
   return (
